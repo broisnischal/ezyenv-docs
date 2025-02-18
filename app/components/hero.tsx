@@ -38,12 +38,13 @@ export default function Hero() {
         </Link>
         <div className="flex flex-col items-center justify-center gap-2">
           <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl text-white">
-            Streamlining Environment Variable Management with EzyEnv
+            Generate Environment Variable Management with EzyEnv
           </h1>
           <p className="mb-8 text-base font-normal  lg:text-xl sm:px-16 xl:px-48 text-gray-400">
-            Effortlessly push environment configurations to GitHub with Ezyenv.
-            It automatically generates sample .env files, making it easy to
-            share templates without exposing sensitive credentials.
+            Push env to github but using ezyenv which is tool to automatically
+            generate sample env files from your existing .env files! making
+            example env file, easy, intutive to share. This helps teams share
+            environment variable templates without exposing actual credentials.
           </p>
 
           <pre
@@ -56,7 +57,7 @@ export default function Hero() {
 
             <div className="relative items-center justify-center gap-5 flex p-2  bg-[rgb(45,55,72)] rounded-lg">
               <span className="text-[#94A3B8] mr-2">$</span>
-              <code className="">npx prisma@latest init --db</code>
+              <code className="">npx ezyenv</code>
               <button
                 type="button"
                 className="relative opacity-0 group-hover:opacity-100 transition-opacity p-2 hover:text-indigo-400 text-gray-400"
