@@ -1,9 +1,9 @@
 import Hero from "~/components/hero";
 import type { Route } from "./+types/home";
 
-export function meta({}: Route.MetaArgs) {
+export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "ezyenv | easy env example" },
+    { title: "npx ezyenv | brew install ezyenv" },
     {
       name: "description",
       content:
