@@ -1,11 +1,11 @@
-import { Link } from "react-router";
 import { useState } from "react";
+import { Link } from "react-router";
 
 export default function Hero() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("npx prisma@latest init --db");
+    navigator.clipboard.writeText("npx ezyenv");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -38,9 +38,9 @@ export default function Hero() {
         </Link>
         <div className="flex flex-col items-center justify-center gap-2">
           <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl text-white">
-            Generate Environment Variable Management with EzyEnv
+            Generate Environment Sample
           </h1>
-          <p className="mb-8 text-base font-normal  lg:text-xl sm:px-16 xl:px-48 text-gray-400">
+          <p className="mb-8 text-base font-normal lg:text-xl sm:px-16 xl:px-48 text-gray-300">
             Push env to github but using ezyenv which is tool to automatically
             generate sample env files from your existing .env files! making
             example env file, easy, intutive to share. This helps teams share
